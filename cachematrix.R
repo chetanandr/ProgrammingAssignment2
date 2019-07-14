@@ -24,7 +24,7 @@ list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 inv <- x$getInverse()
-if(!is.null(inv)){
+if(!is.null(inv)){        ## Check if null and return a message
     message("Cached data")
     return(inv)
   }
